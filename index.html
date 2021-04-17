@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <script src="./js/index.js"></script>
+  <title>Daniel Lorenzo</title>
+</head>
+<body>
+  <input type="radio" name="task" id="fore-notepad" checked>
+  <input type="radio" name="task" id="fore-ie" checked>
+  <input type="radio" name="task" id="fore-pf" checked>
+  <div class="symbol">▶</div>
+  <div class="desktop-icons">
+    <div class="icon">
+      <img src="./img/my-computer.png" />
+      <p>My Computer</p>
+    </div>
+    <div class="icon" id="my-portfolio">
+      <img src="./img/folder.png" />
+      <p>my_portfolio</p>
+    </div>
+  </div>
+  <div class="bottom-toolbar">
+    <div id="start-button-wrapper" class="start-button">
+      <img class="start-image" src="./img/start-icon.png" />
+      <span id="start">Start</span>
+      <div id="startMenu">
+          <div id="left">
+              <div class="b">
+                  Windows
+                  <span class="num95">95</span>
+              </div>
+          </div>
+          <div id="expander" class="menuItem expander">
+            <img class="menuImage" src="./img/programs.png" />
+            <span class="underline-letter">P</span>rograms
+          </div>
+          <div id="programsTab">
+              <ul class="programsList">
+                  <li class="startMenuItem" id="webBrowserIcon">
+                    <img src="./img/internet-explorer.png"/>
+                    Internet Explorer
+                  </li>
+                  <li class="startMenuItem" id="writePadIcon">
+                    <img src="./img/notepad.png"/>
+                    Notepad
+                  </li>
+              </ul>
+          </div>
+          <div class="menuItem">
+            <img class="menuImage" src="./img/documents.png" />
+            <span class="underline-letter">D</span>ocuments
+          </div>
+          <div class="menuItem">
+            <img class="menuImage" src="./img/settings.png" />
+            Settings
+          </div>
+          <div class="menuItem">
+            <img class="menuImage" src="./img/find.png" />
+            Find
+          </div>
+          <div class="menuItem">
+            <img class="menuImage" src="./img/help.png" />
+            Help
+          </div>
+          <div class="menuItem">
+            <img class="menuImage" src="./img/run.png" />
+            Run
+          </div>
+          <div class="divider"></div>
+          <div class="menuItem" id="shutdown">
+            <img class="menuImage" src="./img/shut-down.png" />
+            Sh<span style="text-decoration:underline;">u</span>t Down
+          </div>
+      </div>
+    </div>
+    <!-- Minimized apps -->
+    <nav id="tasklist">
+      <label class="btn" id="task-notepad" for="fore-notepad">
+        <i class="sm pad"></i>
+        <span class="label">Untitled - Notepad</span>
+      </label>
+      <label class="btn" id="task-ie" for="fore-ie">
+        <i class="sm globe"></i>
+        <span class="label">Microsoft Internet Explorer - Portfolio</span>
+      </label>
+    </nav>
+    <!-- End - Minimized apps -->
+    <div class="time">
+      <span id="date"></span>
+    </div>
+  </div>
+  <!-- Apps and start screen -->
+  <!-- Internet explorer app -->
+  <form id="app-ie" role="dialog">
+    <h2>
+      <i class="sm globe"></i>
+      <label id="fore-ie" class="label" for="fore-ie">Microsoft Internet Explorer - Portfolio</label>
+      <a class="btn min" href="#error"></a>
+      <a class="btn max" href="#error"></a>
+      <label id="close-ie" class="btn close" for="open-ie"></label>
+    </h2>
+    <nav class="menu">
+      <a href="#error"><span class="underline-letter">F</span>ile</a>
+      <a href="#error"><span class="underline-letter">E</span>dit</a>
+      <a href="#error"><span class="underline-letter">V</span>iew</a>
+      <a href="#error"><span class="underline-letter">G</span>o</a>
+      <a href="#error"><span class="underline-letter">F</span>avorites</a>
+      <a href="#error"><span class="underline-letter">H</span>elp</a>
+    </nav>
+    <div class="client">
+      <header>
+        <div class="label">Address:</div>
+        <div class="combo">
+          <input spellcheck="false" value="https://danielportfolio.co.uk/windows-95.html">
+          <a class="dropdown" href="#error"></a>
+        </div>
+        <div class="win">
+          <i class="clouds"></i>
+          <i class="logo"></i>
+        </div>
+      </header>
+      <div class="content">
+        <h3>Welcome to the first step of my portfolio</h3>
+        <p class="logo"><a href="https://www.w3.org/" target="_blank" title="HTML5 Logo by W3C"><i class="html5"></i></a></p>
+        <h4>- Hope you like this windows 95 recreation.</h4>
+        <p>Made with love :)</p>
+        <h5>Feedback:</h5>
+        <p><a href="mailto:daniel.lorenzo.dld@gmail.com" target="_blank">daniel.lorenzo.dld@gmail.com</a></p>
+      </div>
+      <footer>
+        <div class="pane-1">&#8203;</div>
+        <div class="pane-2">&#8203;</div>
+        <div class="pane-3">&#8203;</div>
+      </footer>
+    </div>
+  </form>
+  <!-- End - Internet explorer app -->
+  <!-- Notepad app -->
+  <form id="app-notepad" role="dialog">
+    <h2>
+      <i class="sm pad"></i>
+      <label id="fore-notepad" class="label" for="fore-notepad">Untitled - Notepad</label>
+      <a class="btn min" href="#error"></a>
+      <a class="btn max" href="#error"></a>
+      <label id="close-notepad" class="btn close" for="open-notepad"></label>
+    </h2>
+    <nav class="menu">
+      <a href="#error"><span class="underline-letter">F</span>ile</a>
+      <a href="#error"><span class="underline-letter">E</span>dit</a>
+      <a href="#error"><span class="underline-letter">S</span>earch</a>
+      <a href="#error"><span class="underline-letter">H</span>elp</a>
+    </nav>
+    <div class="client">
+      <textarea rows="22" cols="60" spellcheck="false"></textarea>
+    </div>
+  </form>
+  <!-- End - Notepad app -->
+  <!-- Folder my_portfolio -->
+  <form id="my_portfolio_folder" role="dialog">
+    <h2>
+      <i class="sm pad"></i>
+      <label id="fore-pf" class="label" for="fore-pf">my_portfolio</label>
+      <a class="btn min" href="#error"></a>
+      <a class="btn max" href="#error"></a>
+      <label id="close-pf" class="btn close" for="open-pf"></label>
+    </h2>
+    <nav class="menu">
+      <a href="#error"><span class="underline-letter">F</span>ile</a>
+      <a href="#error"><span class="underline-letter">E</span>dit</a>
+      <a href="#error"><span class="underline-letter">V</span>iew</a>
+      <a href="#error"><span class="underline-letter">H</span>elp</a>
+    </nav>
+    <div class="container-inner">
+      <ul class="icons">
+        <li class="file-icon">
+          <a href='part-1.html'>
+            <img src="./img/html-file.png" />
+            index.html
+          </a>
+        </li>
+        <li class="folder-icon">
+          <img src="./img/empty-folder.png" />
+          js
+        </li>
+        <li class="folder-icon">
+          <img src="./img/empty-folder.png" />
+          css
+        </li>
+        <li class="folder-icon">
+          <img src="./img/empty-folder.png" />
+          img
+        </li>
+      </ul>
+    </div>
+    <div class="statusbar">
+      <div class="left">3 object(s)</div>
+      <div class="right">&nbsp;</div>
+    </div>
+  </form>
+  <!-- End - Folder my_portfolio -->
+  <!-- Windows blue error -->
+  <article id="error" class="blue">
+    <a href="#another-error">
+      <h2><em>Windows</em></h2>
+      <header>
+        A fatal exception 0E has occurred at 0123:CAFEBABE in VXD VMM(01) + 0000B00B. The current application will be terminated.
+      </header>
+      <ul>
+        <li>Press any key to terminate the current application.</li>
+        <li>Press CTRL+ALT+DEL again to restart your computer. You will lose any unsaved information in all applications.</li>
+      </ul>
+      <footer>
+        <!-- Press any key to continue -->
+        Click twice to reset your system
+        <span class="caret"></span>
+      </footer>
+    </a>
+  </article>
+  <article id="another-error" class="blue">
+    <a href="#dead">
+      <h2><em>Windows</em></h2>
+      <header>
+        A fatal exception 0D has occurred at 0001:DEFEC8ED. The current application will be terminated.
+      </header>
+      <ul>
+        <li>Press any key to terminate the current application.</li>
+        <li>Press CTRL+ALT+DEL again to restart your computer. You will lose any unsaved information in all applications.</li>
+      </ul>
+      <footer>
+        <!-- Press any key to continue -->
+        Click twice to reset your system
+        <span class="caret"></span>
+      </footer>
+    </a>
+  </article>
+  <!-- End - Windows blue error -->
+  <!-- Black screen with hourglass cursor -->
+  <article id="dead"><a href="#restart"><i class="lg busy"></i></a></article>
+  <article id="black"></article>
+  <!-- End - Black screen with hourglass cursor -->
+  <!-- Restart screen -->
+  <article id="restart">
+    <header class="starting">Starting Windows 95...</header>
+    <section class="startup">
+      <h2>Microsoft<em>Windows<sup>&reg;</sup><strong>95</strong></em></h2>
+      <h3>Microsoft<sup>&reg;</sup></h3>
+      <i class="clouds"></i>
+      <i class="logo"></i>
+      <footer class="bar"></footer>
+    </section>
+  </article>
+  <!-- End - Restart screen -->
+</body>
+</html>
